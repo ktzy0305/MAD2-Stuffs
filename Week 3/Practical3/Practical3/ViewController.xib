@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Practical3" customModuleProvider="target">
+            <connections>
+                <outlet property="myLbl" destination="Brp-Tu-2g6" id="Ygn-4g-Bqb"/>
+                <outlet property="txtField" destination="JU3-pe-Sib" id="0T5-R1-TVU"/>
+                <outlet property="view" destination="iN0-l3-epB" id="6kE-03-L7K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEl-nX-gwO">
+                    <rect key="frame" x="120" y="144" width="174" height="34"/>
+                    <state key="normal" title="Click Me">
+                        <color key="titleColor" red="0.032357117515575573" green="0.06144387539652707" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="onClick:" destination="-1" eventType="touchUpInside" id="Wwl-ro-uoB"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JU3-pe-Sib">
+                    <rect key="frame" x="10" y="338.5" width="394" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Np2-DG-sJp"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brp-Tu-2g6">
+                    <rect key="frame" x="50" y="218" width="314" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Brp-Tu-2g6" firstAttribute="top" secondItem="WEl-nX-gwO" secondAttribute="bottom" constant="40" id="49T-M1-cde"/>
+                <constraint firstItem="WEl-nX-gwO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="120" id="4NK-GJ-U7L"/>
+                <constraint firstItem="JU3-pe-Sib" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="9hd-GL-tox"/>
+                <constraint firstItem="Brp-Tu-2g6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="AKP-ie-NEY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WEl-nX-gwO" secondAttribute="trailing" constant="120" id="Dng-gg-r1O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Brp-Tu-2g6" secondAttribute="trailing" constant="50" id="Tql-AG-OZK"/>
+                <constraint firstItem="JU3-pe-Sib" firstAttribute="top" secondItem="Brp-Tu-2g6" secondAttribute="bottom" constant="100" id="V0z-iI-4eF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JU3-pe-Sib" secondAttribute="trailing" constant="10" id="kec-4R-xSQ"/>
+                <constraint firstItem="WEl-nX-gwO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="tIS-EA-uUU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+</document>
