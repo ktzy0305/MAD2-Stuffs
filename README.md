@@ -1,0 +1,7 @@
+# MAD2-Stuffs
+MAD2 is a IOS Application Development module in Ngee Ann Polytechnic. This repository contains practicals that were completed in this module for the academic year 2018/2019.
+
+> ### Weekly Practicals
+>[Week 1 - Introduction to Swift](https://github.com/ktzy0305/MAD2-Stuffs/tree/master/Week%201)  
+[Week 2 - Object Oriented Programming in Swift](https://github.com/ktzy0305/MAD2-Stuffs/tree/master/Week%202)  
+[Week 3 - iOS User Interface Part I](https://github.com/ktzy0305/MAD2-Stuffs/tree/master/Week%203)
