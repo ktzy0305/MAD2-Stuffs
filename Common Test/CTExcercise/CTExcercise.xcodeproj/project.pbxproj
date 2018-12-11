@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0A8C2321BFFBD60054212A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A8C2221BFFBD60054212A /* DetailsViewController.swift */; };
 		0E7A207621B5090D00605D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A207521B5090D00605D07 /* AppDelegate.swift */; };
 		0E7A207821B5090D00605D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A207721B5090D00605D07 /* ViewController.swift */; };
 		0E7A207B21B5090D00605D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7A207921B5090D00605D07 /* Main.storyboard */; };
@@ -16,10 +17,10 @@
 		0E7A208B21B50B4200605D07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A208A21B50B4200605D07 /* LoginViewController.swift */; };
 		0E7A208D21B5167900605D07 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A208C21B5167900605D07 /* Contact.swift */; };
 		0E7A208F21B5199400605D07 /* GRUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A208E21B5199400605D07 /* GRUITableViewController.swift */; };
-		0EDB043421B7AC8B00FA2B86 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB043321B7AC8B00FA2B86 /* ContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A0A8C2221BFFBD60054212A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		0E7A207221B5090D00605D07 /* CTExcercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTExcercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7A207521B5090D00605D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7A207721B5090D00605D07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		0E7A208A21B50B4200605D07 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0E7A208C21B5167900605D07 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		0E7A208E21B5199400605D07 /* GRUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRUITableViewController.swift; sourceTree = "<group>"; };
-		0EDB043321B7AC8B00FA2B86 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			children = (
 				0E7A207521B5090D00605D07 /* AppDelegate.swift */,
 				0E7A208E21B5199400605D07 /* GRUITableViewController.swift */,
-				0EDB043321B7AC8B00FA2B86 /* ContactDetailsViewController.swift */,
+				0A0A8C2221BFFBD60054212A /* DetailsViewController.swift */,
 				0E7A207721B5090D00605D07 /* ViewController.swift */,
 				0E7A207921B5090D00605D07 /* Main.storyboard */,
 				0E7A208C21B5167900605D07 /* Contact.swift */,
@@ -151,10 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E7A208F21B5199400605D07 /* GRUITableViewController.swift in Sources */,
-				0EDB043421B7AC8B00FA2B86 /* ContactDetailsViewController.swift in Sources */,
 				0E7A208B21B50B4200605D07 /* LoginViewController.swift in Sources */,
 				0E7A207821B5090D00605D07 /* ViewController.swift in Sources */,
 				0E7A208D21B5167900605D07 /* Contact.swift in Sources */,
+				0A0A8C2321BFFBD60054212A /* DetailsViewController.swift in Sources */,
 				0E7A207E21B5090D00605D07 /* CTExcercise.xcdatamodeld in Sources */,
 				0E7A207621B5090D00605D07 /* AppDelegate.swift in Sources */,
 			);

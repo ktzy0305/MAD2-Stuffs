@@ -39,16 +39,25 @@ class GRUITableViewController: UITableViewController {
         let contact = appDelegate?.contactList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.imageView?.image = contact?.photo
-        cell.textLabel?.text = (contact?.firstname)! + " " + (contact?.lastname)!
-        cell.detailTextLabel?.text = "Message"
+        cell.textLabel?.text = "\((contact?.firstname)!) \((contact?.lastname)!)"
         // Configure the cell...
 
         return cell
     }
-    
-    @IBAction func btnCancel(_ sender: Any) {
-        dismiss(animated: false, completion: nil)
+    @IBAction func CancelBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetails"{
+            print("Hello")
+            let destination = segue.destination as! DetailsViewController
+            destination.selectedIndex = (tableView.indexPathForSelectedRow?.row)!
+        }
+    }
+    
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -87,12 +96,11 @@ class GRUITableViewController: UITableViewController {
     /*
     // MARK: - Navigation
 
-    In a storyboard-based application, you will often want to do a little preparation before navigation
-    */
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showcontactdetails"{
-            let destination = segue.destination as! ContactDetailsViewController
-            destination.choice = tableView.indexPathForSelectedRow!.row
-        }
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
+    */
+
 }
