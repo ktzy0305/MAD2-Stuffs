@@ -24,7 +24,7 @@ class CreateStudentViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        
+        tableView.allowsMultipleSelection = true
         // Do any additional setup after loading the view.
     }
     
@@ -63,6 +63,15 @@ class CreateStudentViewController: UIViewController, UITableViewDataSource, UITa
         let cancelAction = UIAlertAction(title: "Ok", style: .cancel)
         alert.addAction(cancelAction)
         present(alert, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCell.AccessoryType.checkmark{
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.none
+        }
+        else{
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

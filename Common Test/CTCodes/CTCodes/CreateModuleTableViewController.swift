@@ -25,8 +25,7 @@ class CreateModuleTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func viewDidAppear(_ animated: Bool) {
-        fetchModules()
-        tableView.reloadData()
+        refreshTable()
     }
     
     func fetchModules(){
@@ -38,6 +37,11 @@ class CreateModuleTableViewController: UITableViewController {
         }catch let error as NSError{
             print("Could not fetch \(error) \(error.userInfo)")
         }
+    }
+    
+    func refreshTable(){
+        fetchModules()
+        tableView.reloadData()
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -67,14 +71,9 @@ class CreateModuleTableViewController: UITableViewController {
             self.saveModule(name: (alert.textFields?.first?.text)!)})
         
         alert.addAction(saveAction)
-        
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        
         alert.addAction(cancelAction)
-        
         present(alert, animated: true, completion: nil)
-        fetchModules()
-        tableView.reloadData()
     }
     
     func saveModule(name: String) -> Void{
@@ -83,6 +82,7 @@ class CreateModuleTableViewController: UITableViewController {
         let module = Module(context: managedContext)
         module.moduleName = name
         appDelegate.saveContext()
+        refreshTable()
     }
     
     /*
