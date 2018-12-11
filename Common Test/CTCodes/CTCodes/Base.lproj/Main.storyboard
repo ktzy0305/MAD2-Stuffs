@@ -34,6 +34,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="t9l-ph-kFZ" kind="show" identifier="ShowStudentDetails" id="1eT-jb-8gt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -239,7 +242,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfr-mc-ImQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-186.40000000000001" y="-221.73913043478262"/>
+            <point key="canvasLocation" x="-187" y="176"/>
         </scene>
         <!--Modules-->
         <scene sceneID="6zX-Qy-0ky">
@@ -283,7 +286,69 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmJ-O1-y3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="-222"/>
+            <point key="canvasLocation" x="752" y="175"/>
+        </scene>
+        <!--Student Details View Controller-->
+        <scene sceneID="yH5-fa-rW2">
+            <objects>
+                <viewController id="t9l-ph-kFZ" customClass="StudentDetailsViewController" customModule="CTCodes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8BO-kT-Haf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7s-UM-M3X">
+                                <rect key="frame" x="176" y="123" width="62" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s7s-UM-M3X" secondAttribute="height" multiplier="2:1" id="tIt-Ez-NZC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIi-sM-cZC">
+                                <rect key="frame" x="166.66666666666666" y="180" width="81" height="40.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gIi-sM-cZC" secondAttribute="height" multiplier="2:1" id="x4b-al-tvR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modules Taken:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLU-Ky-8Cw">
+                                <rect key="frame" x="147" y="240" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modules" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnA-wu-zVo">
+                                <rect key="frame" x="174.33333333333334" y="282" width="65.666666666666657" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mLU-Ky-8Cw" firstAttribute="top" secondItem="gIi-sM-cZC" secondAttribute="bottom" constant="19.333333333333343" id="Jmc-n5-mWR"/>
+                            <constraint firstItem="gIi-sM-cZC" firstAttribute="top" secondItem="s7s-UM-M3X" secondAttribute="bottom" constant="26" id="OCh-TD-s1m"/>
+                            <constraint firstItem="s7s-UM-M3X" firstAttribute="top" secondItem="1X5-Y7-cDB" secondAttribute="top" constant="59" id="efR-pl-Z2r"/>
+                            <constraint firstItem="RnA-wu-zVo" firstAttribute="centerX" secondItem="8BO-kT-Haf" secondAttribute="centerX" id="egA-FX-8Ic"/>
+                            <constraint firstItem="mLU-Ky-8Cw" firstAttribute="centerX" secondItem="8BO-kT-Haf" secondAttribute="centerX" id="gnk-8E-F8G"/>
+                            <constraint firstItem="s7s-UM-M3X" firstAttribute="centerX" secondItem="8BO-kT-Haf" secondAttribute="centerX" id="jDJ-bI-3WL"/>
+                            <constraint firstItem="RnA-wu-zVo" firstAttribute="top" secondItem="mLU-Ky-8Cw" secondAttribute="bottom" constant="21" id="nTg-vE-Vy7"/>
+                            <constraint firstItem="gIi-sM-cZC" firstAttribute="centerX" secondItem="8BO-kT-Haf" secondAttribute="centerX" id="vO3-hR-4j8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1X5-Y7-cDB"/>
+                    </view>
+                    <connections>
+                        <outlet property="modulesLabel" destination="RnA-wu-zVo" id="Xdo-oh-5rx"/>
+                        <outlet property="studentID" destination="gIi-sM-cZC" id="D4Q-ov-0pY"/>
+                        <outlet property="studentName" destination="s7s-UM-M3X" id="d0Q-lP-lDd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1iV-nD-qes" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="-113"/>
         </scene>
     </scenes>
 </document>

@@ -66,12 +66,16 @@ class CreateStudentViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*
         if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCell.AccessoryType.checkmark{
+            print(1)
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.none
         }
         else{
+            print(2)
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
         }
+        */
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

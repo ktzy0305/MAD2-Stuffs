@@ -60,6 +60,13 @@ class StudentTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowStudentDetails"{
+            let destination = segue.destination as! StudentDetailsViewController
+            destination.selectedRow = (tableView.indexPathForSelectedRow?.row)!
+        }
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
