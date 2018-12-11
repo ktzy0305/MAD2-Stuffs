@@ -8,4 +8,5 @@ MAD2 is a IOS Application Development module in Ngee Ann Polytechnic. This repos
 [Week 3 - iOS User Interface Part I](https://github.com/ktzy0305/MAD2-Stuffs/tree/master/Week%203)  
 [Week 4 - iOS User Interface Part II](https://github.com/ktzy0305/MAD2-Stuffs/tree/master/Week%204)  
 [Week 6 - CoreData](https://github.com/ktzy0305/MAD2-Stuffs/tree/master/Week%206)  
-[Week 7 - CocoaPods](https://github.com/ktzy0305/MAD2-Stuffs/tree/master/Week%207)
+[Week 7 - CocoaPods](https://github.com/ktzy0305/MAD2-Stuffs/tree/master/Week%207)  
+[Week 8 - Common Test Practices](https://github.com/ktzy0305/MAD2-Stuffs/tree/master/Common%20Test)
